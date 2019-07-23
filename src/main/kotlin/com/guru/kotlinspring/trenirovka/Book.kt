@@ -30,9 +30,9 @@ class Book(
                 joinColumns = [JoinColumn(name = "group_id")],
                 inverseJoinColumns = [JoinColumn(name = "member_id")]
         )
-        var members: List<Book> = listOf(),
+        var members: MutableList<Book> = mutableListOf(),
 
         @ManyToMany(mappedBy = "members")
-        var memberOf: List<Book> = listOf()
+        var memberOf: MutableList<Book> = mutableListOf()
 
 ): BaseEntity()

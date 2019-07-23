@@ -21,4 +21,11 @@ class BookApiContoller(
         val gaga =  bookMapper.toBookDto(book)
         return bookService.saveOrUpdate(gaga)
     }
+
+    @PostMapping("/two")
+    fun saveBook2(@RequestBody book: BookDto) {
+        for (num in book.members){
+            print(num.title)
+        }
+    }
 }

@@ -14,6 +14,7 @@ class DefaultBookMapper: BookMapper  {
     override fun toBookDto(request: BookDto): Book = Book (
           title = request.title,
             isbn = request.isbn,
-            publisher = request.publisher
+            publisher = request.publisher,
+            members = request.members
     )
 }
