@@ -24,7 +24,7 @@ class Book(
 //        @Column(name = "members")
 //        val members: MutableList<String> = mutableListOf(),
 
-        @ManyToMany
+        @ManyToMany(cascade = [CascadeType.ALL])
         @JoinTable(
                 name = "custodian_group_custodian_member",
                 joinColumns = [JoinColumn(name = "group_id")],
