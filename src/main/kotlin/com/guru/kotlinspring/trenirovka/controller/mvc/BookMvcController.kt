@@ -1,4 +1,4 @@
-package com.guru.kotlinspring.trenirovka.controller
+package com.guru.kotlinspring.trenirovka.controller.mvc
 
 import com.guru.kotlinspring.trenirovka.repo.BookRepository
 import org.springframework.stereotype.Controller

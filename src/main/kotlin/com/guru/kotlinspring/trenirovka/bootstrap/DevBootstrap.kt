@@ -42,6 +42,7 @@ class DevBootstrap(
         val noEjb = Book("j2ee development", "23544", publisher)
         rod.books.add(noEjb)
 
+        authorRepository.save(rod)
         bookRepository.save(noEjb)
     }
 }
