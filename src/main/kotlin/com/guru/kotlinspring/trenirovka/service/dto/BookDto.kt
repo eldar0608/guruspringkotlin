@@ -1,13 +1,14 @@
 package com.guru.kotlinspring.trenirovka.service.dto
 
-import com.guru.kotlinspring.trenirovka.Book
+import com.guru.kotlinspring.trenirovka.model.Book
+import com.guru.kotlinspring.trenirovka.model.Publisher
 
 data class BookDto(
         val title: String,
 
         val isbn: String,
 
-        val publisher: String,
+        val publisher: Publisher,
 
         var members: MutableList<Book> = mutableListOf()
 )

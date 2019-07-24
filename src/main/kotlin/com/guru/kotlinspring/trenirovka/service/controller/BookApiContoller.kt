@@ -1,6 +1,6 @@
 package com.guru.kotlinspring.trenirovka.service.controller
 
-import com.guru.kotlinspring.trenirovka.Book
+import com.guru.kotlinspring.trenirovka.model.Book
 import com.guru.kotlinspring.trenirovka.service.dto.BookDto
 import com.guru.kotlinspring.trenirovka.service.entity.BookService
 import com.guru.kotlinspring.trenirovka.service.mapper.BookMapper

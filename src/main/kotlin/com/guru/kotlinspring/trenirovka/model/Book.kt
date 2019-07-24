@@ -1,6 +1,7 @@
-package com.guru.kotlinspring.trenirovka
+package com.guru.kotlinspring.trenirovka.model
 
 import com.guru.kotlinspring.domain.BaseEntity
+import com.guru.kotlinspring.trenirovka.model.Author
 import javax.persistence.*
 
 @Entity
@@ -9,7 +10,8 @@ class Book(
 
         val isbn: String,
 
-        val publisher: String,
+        @OneToOne
+        val publisher: Publisher,
 
         @ManyToMany
         @JoinTable(

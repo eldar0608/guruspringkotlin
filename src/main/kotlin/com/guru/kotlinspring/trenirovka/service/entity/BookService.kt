@@ -1,6 +1,6 @@
 package com.guru.kotlinspring.trenirovka.service.entity
 
-import com.guru.kotlinspring.trenirovka.Book
+import com.guru.kotlinspring.trenirovka.model.Book
 import com.guru.kotlinspring.trenirovka.repo.BookRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
