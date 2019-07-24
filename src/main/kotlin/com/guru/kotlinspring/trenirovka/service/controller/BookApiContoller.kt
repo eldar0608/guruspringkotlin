@@ -23,9 +23,15 @@ class BookApiContoller(
     }
 
     @PostMapping("/two")
-    fun saveBook2(@RequestBody book: BookDto) {
-        for (num in book.members){
-            print(num.title)
-        }
+    fun saveBook2(@RequestBody request: BookDto) {
+//        for (num in book.members){
+            val book = Book(
+                    isbn = request.isbn,
+                    publisher = request.publisher,
+                    title = request.title,
+                    members = request.members
+            )
+        bookService.saveOrUpdate(book)
+//        }
     }
 }
