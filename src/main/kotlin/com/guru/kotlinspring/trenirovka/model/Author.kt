@@ -1,7 +1,6 @@
 package com.guru.kotlinspring.trenirovka.model
 
-import com.guru.kotlinspring.domain.BaseEntity
-import com.guru.kotlinspring.trenirovka.model.Book
+import com.guru.kotlinspring.petclinic.domain.BaseEntity
 import javax.persistence.Entity
 import javax.persistence.ManyToMany
 

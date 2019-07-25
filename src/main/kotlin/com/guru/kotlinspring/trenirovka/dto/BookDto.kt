@@ -1,4 +1,4 @@
-package com.guru.kotlinspring.trenirovka.service.dto
+package com.guru.kotlinspring.trenirovka.dto
 
 import com.guru.kotlinspring.trenirovka.model.Book
 import com.guru.kotlinspring.trenirovka.model.Publisher

@@ -1,10 +1,6 @@
-package com.guru.kotlinspring.domain
+package com.guru.kotlinspring.petclinic.domain
 
-import org.springframework.data.annotation.CreatedBy
-import org.springframework.data.annotation.CreatedDate
-import org.springframework.data.annotation.LastModifiedDate
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
-import java.time.LocalDateTime
 import javax.persistence.*
 
 @MappedSuperclass
@@ -14,13 +10,13 @@ abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null
 
-    @CreatedBy
-    @Column(name = "created_timestamp", updatable = false)
-    var createdTimestamp: LocalDateTime? = null
-
-    @LastModifiedDate
-    @Column(name = "modified_timestamp")
-    var modifiedTimestamp: LocalDateTime? = null
+//    @CreatedBy
+//    @Column(name = "created_timestamp", updatable = false)
+//    var createdTimestamp: LocalDateTime? = null
+//
+//    @LastModifiedDate
+//    @Column(name = "modified_timestamp")
+//    var modifiedTimestamp: LocalDateTime? = null
 
     val isPersisted: Boolean get() = id != null
 

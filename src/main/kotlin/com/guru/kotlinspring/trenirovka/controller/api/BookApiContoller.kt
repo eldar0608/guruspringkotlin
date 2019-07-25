@@ -1,7 +1,7 @@
 package com.guru.kotlinspring.trenirovka.controller.api
 
 import com.guru.kotlinspring.trenirovka.model.Book
-import com.guru.kotlinspring.trenirovka.service.dto.BookDto
+import com.guru.kotlinspring.trenirovka.dto.BookDto
 import com.guru.kotlinspring.trenirovka.service.entity.BookService
 import com.guru.kotlinspring.trenirovka.service.mapper.BookMapper
 import org.springframework.web.bind.annotation.PostMapping

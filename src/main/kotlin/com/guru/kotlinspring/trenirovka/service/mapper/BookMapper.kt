@@ -1,7 +1,7 @@
 package com.guru.kotlinspring.trenirovka.service.mapper
 
 import com.guru.kotlinspring.trenirovka.model.Book
-import com.guru.kotlinspring.trenirovka.service.dto.BookDto
+import com.guru.kotlinspring.trenirovka.dto.BookDto
 import org.springframework.stereotype.Service
 
 interface BookMapper{
